@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/CollisionDemo.unity
+  isLoaded: 1
+  isActive: 1
