@@ -101,6 +101,9 @@ public partial class WorldController : MonoBehaviour
 
 public partial class WorldController
 {
+    public Material mWhiteMat;
+    public Material mGreenMat;
+
     public Text mInfoText;
     private StringBuilder mInfoCache = new StringBuilder();
 

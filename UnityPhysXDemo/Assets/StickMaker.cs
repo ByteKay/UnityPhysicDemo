@@ -45,8 +45,7 @@ public partial class WorldController
     private void InitializeStickMaterial(GameObject stick)
     {
         MeshRenderer render = stick.GetComponent<MeshRenderer>();
-        Material mat = render.material;
-        mat.color = Color.green;
+        render.sharedMaterial = mGreenMat;
     }
     
     private void InitializeStickTransform(GameObject stick)

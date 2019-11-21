@@ -41,8 +41,7 @@ public partial class WorldController
     private void InitializeBallMaterial(GameObject ball)
     {
         MeshRenderer render = ball.GetComponent<MeshRenderer>();
-        Material mat = render.material;
-        mat.color = Color.red;
+        render.sharedMaterial = mWhiteMat;
     }
 
     private void InitializeBallTransform(GameObject ball)
