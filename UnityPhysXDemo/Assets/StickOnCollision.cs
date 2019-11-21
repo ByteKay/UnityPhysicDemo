@@ -68,6 +68,7 @@ public class StickOnCollision : MonoBehaviour
         float j = -b / meffective;
         Vector3 J = j * selfNormal;
         WorldController.Instance.AppendInfo(string.Format("计算 j={0}, 冲量J={1}", j, J.ToStringNew()));
+        WorldController.Instance.AppendInfo("注意：实际物理引擎，j并不这么直接计算");
         // 更新速度
         Vector3 raJ = Vector3.Cross(ra, J);
         Vector3 rbJ = Vector3.Cross(rb, J);
@@ -91,7 +92,7 @@ public class StickOnCollision : MonoBehaviour
 
     private void OnCollisionExit(Collision collision)
     {
-        WorldController.Instance.AppendInfo("碰撞分离 Time.timeScale = 0");
+        WorldController.Instance.AppendInfo("碰撞分离");
         Time.timeScale = 0;
     }
 }
