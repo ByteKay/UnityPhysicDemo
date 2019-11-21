@@ -81,8 +81,8 @@ public class StickOnCollision : MonoBehaviour
 
         // 球的位置计算
         Vector3 pos = WorldController.Instance.mBallPos + va * Time.fixedDeltaTime;
-        WorldController.Instance.AppendInfo(string.Format("auto_速度 ball  v={0}, w={1}, 位置={2}", va.ToStringNew(), wa.ToStringNew(), pos.ToStringNew()));
-        WorldController.Instance.AppendInfo(string.Format("auto_速度 stick v={0}, w={1}", vb.ToStringNew(), wb.ToStringNew()));
+        WorldController.Instance.AppendInfo(string.Format("mann_速度 ball  v={0}, w={1}, 位置={2}", va.ToStringNew(), wa.ToStringNew(), pos.ToStringNew()));
+        WorldController.Instance.AppendInfo(string.Format("mann_速度 stick v={0}, w={1}", vb.ToStringNew(), wb.ToStringNew()));
     }
 
     private void OnCollisionStay(Collision collision)
