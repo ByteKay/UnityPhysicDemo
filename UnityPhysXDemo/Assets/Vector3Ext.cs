@@ -18,11 +18,11 @@ public static class Vector3Ext
 
     public static Vector3 DotMul(this Vector3 v, Vector3 other)
     {
-        return new Vector3(v.x * other.x, v.y * other.y, v.z * other.z);
+        return Vector3.Scale(v, other);
     }
 
     public static Vector3 Square(this Vector3 v)
     {
-        return new Vector3(v.x * v.x, v.y * v.y, v.z * v.z);
+        return DotMul(v, v);
     }
 }
